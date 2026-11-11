@@ -51,7 +51,7 @@
    }
   },
   "ai4bharat-indicconformer-600m": {
-   "name": "IndicConformer 600M multilingual",
+   "name": "IndicConformer 600M",
    "maker": "AI4Bharat",
    "link": "https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual",
    "parameters": "600M",
@@ -223,7 +223,7 @@
    }
   },
   "onnx-int8": {
-   "name": "IndicConformer Nepali, int8 ONNX",
+   "name": "IndicConformer Nepali int8",
    "maker": "OpenVoiceOS",
    "link": "https://huggingface.co/OpenVoiceOS/ai4bharat-indicconformer-ne-onnx",
    "parameters": "120M",
@@ -255,7 +255,7 @@
    }
   },
   "ailab-sravaani": {
-   "name": "SraVaani Nepali-English code-mix",
+   "name": "SraVaani code-mix (AI Lab)",
    "maker": "AI Lab",
    "link": "https://huggingface.co/ailabpvtltd/sravaani-nepali-english-codemix-asr",
    "parameters": "449M",
@@ -299,7 +299,7 @@
    }
   },
   "ailab-indicconformer": {
-   "name": "IndicConformer Nepali-English code-mix",
+   "name": "IndicConformer code-mix (AI Lab)",
    "maker": "AI Lab",
    "link": "https://huggingface.co/ailabpvtltd/indicconformer-nepali-english-codemix-asr",
    "parameters": "128M",
@@ -343,7 +343,7 @@
    }
   },
   "ailab-whisper-turbo": {
-   "name": "Whisper large-v3-turbo Nepali-English code-mix",
+   "name": "Whisper turbo code-mix (AI Lab)",
    "maker": "AI Lab",
    "link": "https://huggingface.co/ailabpvtltd/whisper-large-v3-turbo-nepali-english-codemix-asr",
    "parameters": "809M",

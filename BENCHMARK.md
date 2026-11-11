@@ -13,14 +13,14 @@ column. Sorted by mean WER.
 | Model | Size | Mean | FLEURS | IndicVoices | IndicVoices (phone) | Podcast | Code-switch |
 |---|---|---|---|---|---|---|---|
 | **[Shravya 0.1](https://huggingface.co/fiste-ai/shravya)** | 120M | **23.5** / **20.4** | 23.9 / **18.4** | 11.8 / 11.1 | 13.8 / 13.1 | 34.1 / 31.8 | **33.7** / **27.6** |
-| [IndicConformer 600M multilingual](https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual) | 600M | 27.3 / 23.8 | **23.7** / 18.7 | 15.0 / 14.0 | 17.9 / 17.0 | 41.7 / 35.9 | 38.4 / 33.3 |
+| [IndicConformer 600M](https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual) | 600M | 27.3 / 23.8 | **23.7** / 18.7 | 15.0 / 14.0 | 17.9 / 17.0 | 41.7 / 35.9 | 38.4 / 33.3 |
 | [IndicConformer Nepali](https://huggingface.co/ai4bharat/indicconformer_stt_ne_hybrid_ctc_rnnt_large) | 129M | 27.7 / 24.4 | 24.8 / 19.4 | **11.3** / **10.6** | **13.6** / **12.9** | 48.8 / 43.5 | 40.1 / 35.4 |
 | [SraVaani 1.0](https://huggingface.co/ARTPARK-IISc/SraVaani-1.0) | 430M | 29.7 / 26.2 | 25.9 / 20.9 | 13.9 / 13.0 | 19.1 / 18.1 | 45.0 / 39.3 | 44.5 / 39.5 |
 | [Kriti Telephony](https://huggingface.co/Aarjan/kriti-telephony) | 129M | 31.2 / 23.8 | 31.8 / 19.8 | 25.1 / 17.2 | 27.2 / 19.9 | **28.3** / **26.4** | 43.5 / 35.6 |
-| [IndicConformer Nepali, int8 ONNX](https://huggingface.co/OpenVoiceOS/ai4bharat-indicconformer-ne-onnx) | 120M | 33.3 / 30.2 | 29.2 / 24.6 | 16.3 / 15.3 | 21.3 / 20.3 | 54.5 / 50.2 | 45.1 / 40.4 |
-| [SraVaani Nepali-English code-mix](https://huggingface.co/ailabpvtltd/sravaani-nepali-english-codemix-asr) | 449M | 38.2 / 30.3 | 34.5 / 25.2 | 34.0 / 27.5 | 39.6 / 32.7 | 39.3 / 32.0 | 43.6 / 34.0 |
-| [IndicConformer Nepali-English code-mix](https://huggingface.co/ailabpvtltd/indicconformer-nepali-english-codemix-asr) | 128M | 38.6 / 31.4 | 34.9 / 26.2 | 34.3 / 28.1 | 38.4 / 32.0 | 42.1 / 36.0 | 43.2 / 34.7 |
-| [Whisper large-v3-turbo Nepali-English code-mix](https://huggingface.co/ailabpvtltd/whisper-large-v3-turbo-nepali-english-codemix-asr) | 809M | 42.0 / 34.5 | 39.2 / 29.6 | 39.3 / 34.0 | 46.9 / 40.9 | 39.8 / 32.6 | 44.9 / 35.6 |
+| [IndicConformer Nepali int8](https://huggingface.co/OpenVoiceOS/ai4bharat-indicconformer-ne-onnx) | 120M | 33.3 / 30.2 | 29.2 / 24.6 | 16.3 / 15.3 | 21.3 / 20.3 | 54.5 / 50.2 | 45.1 / 40.4 |
+| [SraVaani code-mix (AI Lab)](https://huggingface.co/ailabpvtltd/sravaani-nepali-english-codemix-asr) | 449M | 38.2 / 30.3 | 34.5 / 25.2 | 34.0 / 27.5 | 39.6 / 32.7 | 39.3 / 32.0 | 43.6 / 34.0 |
+| [IndicConformer code-mix (AI Lab)](https://huggingface.co/ailabpvtltd/indicconformer-nepali-english-codemix-asr) | 128M | 38.6 / 31.4 | 34.9 / 26.2 | 34.3 / 28.1 | 38.4 / 32.0 | 42.1 / 36.0 | 43.2 / 34.7 |
+| [Whisper turbo code-mix (AI Lab)](https://huggingface.co/ailabpvtltd/whisper-large-v3-turbo-nepali-english-codemix-asr) | 809M | 42.0 / 34.5 | 39.2 / 29.6 | 39.3 / 34.0 | 46.9 / 40.9 | 39.8 / 32.6 | 44.9 / 35.6 |
 | [Ratna (Ampixa Labs)](https://huggingface.co/ampixa/ratna-asr) | 32M | 54.2 / 51.5 | 56.9 / 52.4 | 48.3 / 46.3 | 53.9 / 51.8 | 46.0 / 45.3 | 65.6 / 61.7 |
 | [Sagarmatha v4](https://huggingface.co/tonibirat/sagarmatha-v4-nepali-asr) | 809M | 55.4 / 52.1 | 38.5 / 31.9 | 52.3 / 50.5 | 59.6 / 58.3 | 62.7 / 59.7 | 64.1 / 60.2 |
 | [Nepali ASR aud8](https://huggingface.co/BlackfireAI/nepali-asr-aud8-325m) | 325M | 57.7 / 54.1 | 43.6 / 38.8 | 54.1 / 51.1 | 62.8 / 60.3 | 63.5 / 61.1 | 64.3 / 59.4 |
@@ -46,11 +46,11 @@ column. Sorted by mean WER.
 | [Kriti Telephony](https://huggingface.co/Aarjan/kriti-telephony) | 129M | 37.9 / 34.5 | 16.8 / 11.2 | n/a |
 | **[Shravya 0.1](https://huggingface.co/fiste-ai/shravya)** | 120M | 38.2 / 34.6 | 16.2 / 12.8 | 18.4 / **11.0** |
 | [SraVaani 1.0](https://huggingface.co/ARTPARK-IISc/SraVaani-1.0) | 430M | 42.9 / 40.6 | 24.7 / 20.5 | 20.0 / 13.9 |
-| [IndicConformer 600M multilingual](https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual) | 600M | 47.5 / 45.4 | **12.5** / **9.6** | **16.5** / 11.7 |
+| [IndicConformer 600M](https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual) | 600M | 47.5 / 45.4 | **12.5** / **9.6** | **16.5** / 11.7 |
 | [IndicConformer Nepali](https://huggingface.co/ai4bharat/indicconformer_stt_ne_hybrid_ctc_rnnt_large) | 129M | 47.6 / 45.6 | 22.1 / 19.4 | 18.0 / 12.2 |
-| [IndicConformer Nepali-English code-mix](https://huggingface.co/ailabpvtltd/indicconformer-nepali-english-codemix-asr) | 128M | 48.7 / 44.6 | 21.3 / 17.8 | 26.3 / 19.3 |
-| [SraVaani Nepali-English code-mix](https://huggingface.co/ailabpvtltd/sravaani-nepali-english-codemix-asr) | 449M | 49.0 / 44.1 | 18.1 / 13.8 | 24.7 / 17.3 |
-| [Whisper large-v3-turbo Nepali-English code-mix](https://huggingface.co/ailabpvtltd/whisper-large-v3-turbo-nepali-english-codemix-asr) | 809M | 54.3 / 50.1 | 22.9 / 19.4 | 30.4 / 22.3 |
+| [IndicConformer code-mix (AI Lab)](https://huggingface.co/ailabpvtltd/indicconformer-nepali-english-codemix-asr) | 128M | 48.7 / 44.6 | 21.3 / 17.8 | 26.3 / 19.3 |
+| [SraVaani code-mix (AI Lab)](https://huggingface.co/ailabpvtltd/sravaani-nepali-english-codemix-asr) | 449M | 49.0 / 44.1 | 18.1 / 13.8 | 24.7 / 17.3 |
+| [Whisper turbo code-mix (AI Lab)](https://huggingface.co/ailabpvtltd/whisper-large-v3-turbo-nepali-english-codemix-asr) | 809M | 54.3 / 50.1 | 22.9 / 19.4 | 30.4 / 22.3 |
 | [Ratna (Ampixa Labs)](https://huggingface.co/ampixa/ratna-asr) | 32M | 67.5 / 66.2 | 43.1 / 39.9 | 45.3 / 40.6 |
 | [Nepali ASR aud8](https://huggingface.co/BlackfireAI/nepali-asr-aud8-325m) | 325M | 79.2 / 78.5 | 25.3 / 23.9 | n/a |
 | [MMS 1B](https://huggingface.co/facebook/mms-1b-all) | 965M | 81.6 / 79.8 | 32.7 / 29.0 | n/a |
@@ -73,13 +73,13 @@ difference lies above zero, includes zero or lies below zero.
 
 | Compared with | Mean WER, points | Mean nWER, points | Shravya has fewer errors on | No clear difference on | Shravya has more errors on |
 |---|---|---|---|---|---|
-| IndicConformer 600M multilingual | +3.9 [+3.2, +4.7] | +3.4 [+2.7, +4.3] | IndicVoices, IndicVoices (phone), Podcast, Code-switch | FLEURS | none |
+| IndicConformer 600M | +3.9 [+3.2, +4.7] | +3.4 [+2.7, +4.3] | IndicVoices, IndicVoices (phone), Podcast, Code-switch | FLEURS | none |
 | IndicConformer Nepali | +4.2 [+3.8, +4.8] | +4.0 [+3.5, +4.7] | FLEURS, Podcast, Code-switch | IndicVoices (phone) | IndicVoices |
 | Kriti Telephony | +7.7 [+7.3, +8.1] | +3.4 [+3.0, +4.0] | FLEURS, IndicVoices, IndicVoices (phone), Code-switch | none | Podcast |
 | SraVaani 1.0 | +6.2 [+5.6, +7.2] | +5.8 [+5.2, +6.8] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
 | SeamlessM4T v2 large | +45.9 [+42.5, +50.1] | +45.0 [+41.6, +49.4] | IndicVoices, IndicVoices (phone), Podcast, Code-switch | FLEURS | none |
-| SraVaani Nepali-English code-mix | +14.7 [+13.3, +16.5] | +9.9 [+8.6, +11.7] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
-| IndicConformer Nepali-English code-mix | +15.1 [+14.0, +16.5] | +11.0 [+9.9, +12.5] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
+| SraVaani code-mix (AI Lab) | +14.7 [+13.3, +16.5] | +9.9 [+8.6, +11.7] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
+| IndicConformer code-mix (AI Lab) | +15.1 [+14.0, +16.5] | +11.0 [+9.9, +12.5] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
 | Ratna (Ampixa Labs) | +30.7 [+29.6, +31.9] | +31.1 [+30.0, +32.4] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
 
 ## Method
