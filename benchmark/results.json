@@ -1,0 +1,682 @@
+{
+ "measured": "11 November 2026",
+ "unit": "percent",
+ "metrics": {
+  "wer": "word error rate",
+  "nwer": "word error rate after spelling and number normalisation"
+ },
+ "systems": {
+  "shravya-0.1": {
+   "name": "Shravya 0.1",
+   "maker": "Fiste AI",
+   "link": "https://huggingface.co/fiste-ai/shravya",
+   "parameters": "120M",
+   "test": {
+    "fleurs": {
+     "wer": 23.95,
+     "nwer": 18.36
+    },
+    "indicvoices": {
+     "wer": 11.81,
+     "nwer": 11.08
+    },
+    "indicvoices-phone": {
+     "wer": 13.84,
+     "nwer": 13.13
+    },
+    "podcast": {
+     "wer": 34.12,
+     "nwer": 31.81
+    },
+    "codeswitch": {
+     "wer": 33.71,
+     "nwer": 27.57
+    },
+    "mean": {
+     "wer": 23.49,
+     "nwer": 20.39
+    },
+    "neptel02": {
+     "wer": 38.17,
+     "nwer": 34.63
+    },
+    "pvspeech": {
+     "wer": 16.22,
+     "nwer": 12.77
+    },
+    "freshread": {
+     "wer": 18.35,
+     "nwer": 11.02
+    }
+   }
+  },
+  "ai4bharat-indicconformer-600m": {
+   "name": "IndicConformer 600M multilingual",
+   "maker": "AI4Bharat",
+   "link": "https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual",
+   "parameters": "600M",
+   "test": {
+    "fleurs": {
+     "wer": 23.73,
+     "nwer": 18.7
+    },
+    "indicvoices": {
+     "wer": 14.97,
+     "nwer": 14.01
+    },
+    "indicvoices-phone": {
+     "wer": 17.95,
+     "nwer": 17.04
+    },
+    "podcast": {
+     "wer": 41.66,
+     "nwer": 35.91
+    },
+    "codeswitch": {
+     "wer": 38.41,
+     "nwer": 33.34
+    },
+    "mean": {
+     "wer": 27.34,
+     "nwer": 23.8
+    },
+    "neptel02": {
+     "wer": 47.53,
+     "nwer": 45.41
+    },
+    "pvspeech": {
+     "wer": 12.5,
+     "nwer": 9.57
+    },
+    "freshread": {
+     "wer": 16.48,
+     "nwer": 11.66
+    }
+   }
+  },
+  "upstream": {
+   "name": "IndicConformer Nepali",
+   "maker": "AI4Bharat",
+   "link": "https://huggingface.co/ai4bharat/indicconformer_stt_ne_hybrid_ctc_rnnt_large",
+   "parameters": "129M",
+   "test": {
+    "fleurs": {
+     "wer": 24.83,
+     "nwer": 19.38
+    },
+    "indicvoices": {
+     "wer": 11.28,
+     "nwer": 10.59
+    },
+    "indicvoices-phone": {
+     "wer": 13.59,
+     "nwer": 12.93
+    },
+    "podcast": {
+     "wer": 48.77,
+     "nwer": 43.52
+    },
+    "codeswitch": {
+     "wer": 40.11,
+     "nwer": 35.4
+    },
+    "mean": {
+     "wer": 27.72,
+     "nwer": 24.36
+    },
+    "neptel02": {
+     "wer": 47.6,
+     "nwer": 45.57
+    },
+    "pvspeech": {
+     "wer": 22.07,
+     "nwer": 19.41
+    },
+    "freshread": {
+     "wer": 18.03,
+     "nwer": 12.16
+    }
+   }
+  },
+  "sravaani-1.0": {
+   "name": "SraVaani 1.0",
+   "maker": "ARTPARK-IISc",
+   "link": "https://huggingface.co/ARTPARK-IISc/SraVaani-1.0",
+   "parameters": "430M",
+   "test": {
+    "fleurs": {
+     "wer": 25.95,
+     "nwer": 20.91
+    },
+    "indicvoices": {
+     "wer": 13.91,
+     "nwer": 13.04
+    },
+    "indicvoices-phone": {
+     "wer": 19.11,
+     "nwer": 18.13
+    },
+    "podcast": {
+     "wer": 44.98,
+     "nwer": 39.31
+    },
+    "codeswitch": {
+     "wer": 44.48,
+     "nwer": 39.54
+    },
+    "mean": {
+     "wer": 29.69,
+     "nwer": 26.19
+    },
+    "neptel02": {
+     "wer": 42.92,
+     "nwer": 40.63
+    },
+    "pvspeech": {
+     "wer": 24.73,
+     "nwer": 20.48
+    },
+    "freshread": {
+     "wer": 19.99,
+     "nwer": 13.89
+    }
+   }
+  },
+  "kriti-telephony": {
+   "name": "Kriti Telephony",
+   "maker": "Aarjan",
+   "link": "https://huggingface.co/Aarjan/kriti-telephony",
+   "parameters": "129M",
+   "test": {
+    "fleurs": {
+     "wer": 31.78,
+     "nwer": 19.82
+    },
+    "indicvoices": {
+     "wer": 25.07,
+     "nwer": 17.17
+    },
+    "indicvoices-phone": {
+     "wer": 27.2,
+     "nwer": 19.91
+    },
+    "podcast": {
+     "wer": 28.27,
+     "nwer": 26.44
+    },
+    "codeswitch": {
+     "wer": 43.55,
+     "nwer": 35.65
+    },
+    "mean": {
+     "wer": 31.17,
+     "nwer": 23.8
+    },
+    "neptel02": {
+     "wer": 37.94,
+     "nwer": 34.48
+    },
+    "pvspeech": {
+     "wer": 16.76,
+     "nwer": 11.17
+    }
+   }
+  },
+  "onnx-int8": {
+   "name": "IndicConformer Nepali, int8 ONNX",
+   "maker": "OpenVoiceOS",
+   "link": "https://huggingface.co/OpenVoiceOS/ai4bharat-indicconformer-ne-onnx",
+   "parameters": "120M",
+   "test": {
+    "fleurs": {
+     "wer": 29.19,
+     "nwer": 24.55
+    },
+    "indicvoices": {
+     "wer": 16.31,
+     "nwer": 15.28
+    },
+    "indicvoices-phone": {
+     "wer": 21.34,
+     "nwer": 20.27
+    },
+    "podcast": {
+     "wer": 54.54,
+     "nwer": 50.25
+    },
+    "codeswitch": {
+     "wer": 45.14,
+     "nwer": 40.43
+    },
+    "mean": {
+     "wer": 33.3,
+     "nwer": 30.16
+    }
+   }
+  },
+  "ailab-sravaani": {
+   "name": "SraVaani Nepali-English code-mix",
+   "maker": "AI Lab",
+   "link": "https://huggingface.co/ailabpvtltd/sravaani-nepali-english-codemix-asr",
+   "parameters": "449M",
+   "test": {
+    "fleurs": {
+     "wer": 34.55,
+     "nwer": 25.23
+    },
+    "indicvoices": {
+     "wer": 33.97,
+     "nwer": 27.5
+    },
+    "indicvoices-phone": {
+     "wer": 39.63,
+     "nwer": 32.73
+    },
+    "podcast": {
+     "wer": 39.31,
+     "nwer": 32.03
+    },
+    "codeswitch": {
+     "wer": 43.56,
+     "nwer": 34.01
+    },
+    "mean": {
+     "wer": 38.2,
+     "nwer": 30.3
+    },
+    "neptel02": {
+     "wer": 49.0,
+     "nwer": 44.07
+    },
+    "pvspeech": {
+     "wer": 18.09,
+     "nwer": 13.83
+    },
+    "freshread": {
+     "wer": 24.68,
+     "nwer": 17.3
+    }
+   }
+  },
+  "ailab-indicconformer": {
+   "name": "IndicConformer Nepali-English code-mix",
+   "maker": "AI Lab",
+   "link": "https://huggingface.co/ailabpvtltd/indicconformer-nepali-english-codemix-asr",
+   "parameters": "128M",
+   "test": {
+    "fleurs": {
+     "wer": 34.95,
+     "nwer": 26.16
+    },
+    "indicvoices": {
+     "wer": 34.33,
+     "nwer": 28.09
+    },
+    "indicvoices-phone": {
+     "wer": 38.37,
+     "nwer": 32.01
+    },
+    "podcast": {
+     "wer": 42.06,
+     "nwer": 36.02
+    },
+    "codeswitch": {
+     "wer": 43.25,
+     "nwer": 34.74
+    },
+    "mean": {
+     "wer": 38.59,
+     "nwer": 31.4
+    },
+    "neptel02": {
+     "wer": 48.66,
+     "nwer": 44.65
+    },
+    "pvspeech": {
+     "wer": 21.28,
+     "nwer": 17.82
+    },
+    "freshread": {
+     "wer": 26.28,
+     "nwer": 19.26
+    }
+   }
+  },
+  "ailab-whisper-turbo": {
+   "name": "Whisper large-v3-turbo Nepali-English code-mix",
+   "maker": "AI Lab",
+   "link": "https://huggingface.co/ailabpvtltd/whisper-large-v3-turbo-nepali-english-codemix-asr",
+   "parameters": "809M",
+   "test": {
+    "fleurs": {
+     "wer": 39.24,
+     "nwer": 29.65
+    },
+    "indicvoices": {
+     "wer": 39.29,
+     "nwer": 34.01
+    },
+    "indicvoices-phone": {
+     "wer": 46.94,
+     "nwer": 40.87
+    },
+    "podcast": {
+     "wer": 39.77,
+     "nwer": 32.57
+    },
+    "codeswitch": {
+     "wer": 44.9,
+     "nwer": 35.63
+    },
+    "mean": {
+     "wer": 42.03,
+     "nwer": 34.55
+    },
+    "neptel02": {
+     "wer": 54.32,
+     "nwer": 50.15
+    },
+    "pvspeech": {
+     "wer": 22.87,
+     "nwer": 19.41
+    },
+    "freshread": {
+     "wer": 30.37,
+     "nwer": 22.27
+    }
+   }
+  },
+  "ratna": {
+   "name": "Ratna (Ampixa Labs)",
+   "maker": "Ampixa Labs",
+   "link": "https://huggingface.co/ampixa/ratna-asr",
+   "parameters": "32M",
+   "test": {
+    "fleurs": {
+     "wer": 56.94,
+     "nwer": 52.39
+    },
+    "indicvoices": {
+     "wer": 48.34,
+     "nwer": 46.32
+    },
+    "indicvoices-phone": {
+     "wer": 53.87,
+     "nwer": 51.81
+    },
+    "podcast": {
+     "wer": 46.03,
+     "nwer": 45.31
+    },
+    "codeswitch": {
+     "wer": 65.63,
+     "nwer": 61.68
+    },
+    "mean": {
+     "wer": 54.16,
+     "nwer": 51.5
+    },
+    "neptel02": {
+     "wer": 67.5,
+     "nwer": 66.17
+    },
+    "pvspeech": {
+     "wer": 43.09,
+     "nwer": 39.89
+    },
+    "freshread": {
+     "wer": 45.26,
+     "nwer": 40.62
+    }
+   }
+  },
+  "sagarmatha-v4": {
+   "name": "Sagarmatha v4",
+   "maker": "tonibirat",
+   "link": "https://huggingface.co/tonibirat/sagarmatha-v4-nepali-asr",
+   "parameters": "809M",
+   "test": {
+    "fleurs": {
+     "wer": 38.51,
+     "nwer": 31.88
+    },
+    "indicvoices": {
+     "wer": 52.31,
+     "nwer": 50.51
+    },
+    "indicvoices-phone": {
+     "wer": 59.55,
+     "nwer": 58.29
+    },
+    "podcast": {
+     "wer": 62.7,
+     "nwer": 59.71
+    },
+    "codeswitch": {
+     "wer": 64.08,
+     "nwer": 60.23
+    },
+    "mean": {
+     "wer": 55.43,
+     "nwer": 52.12
+    },
+    "neptel02": {
+     "wer": 91.47,
+     "nwer": 90.44
+    },
+    "pvspeech": {
+     "wer": 33.51,
+     "nwer": 30.85
+    }
+   }
+  },
+  "blackfire-aud8": {
+   "name": "Nepali ASR aud8",
+   "maker": "BlackfireAI",
+   "link": "https://huggingface.co/BlackfireAI/nepali-asr-aud8-325m",
+   "parameters": "325M",
+   "test": {
+    "fleurs": {
+     "wer": 43.63,
+     "nwer": 38.81
+    },
+    "indicvoices": {
+     "wer": 54.15,
+     "nwer": 51.08
+    },
+    "indicvoices-phone": {
+     "wer": 62.83,
+     "nwer": 60.26
+    },
+    "podcast": {
+     "wer": 63.49,
+     "nwer": 61.1
+    },
+    "codeswitch": {
+     "wer": 64.3,
+     "nwer": 59.35
+    },
+    "mean": {
+     "wer": 57.68,
+     "nwer": 54.12
+    },
+    "neptel02": {
+     "wer": 79.2,
+     "nwer": 78.52
+    },
+    "pvspeech": {
+     "wer": 25.27,
+     "nwer": 23.94
+    }
+   }
+  },
+  "mms-1b-all": {
+   "name": "MMS 1B",
+   "maker": "Meta",
+   "link": "https://huggingface.co/facebook/mms-1b-all",
+   "parameters": "965M",
+   "test": {
+    "fleurs": {
+     "wer": 31.36,
+     "nwer": 27.0
+    },
+    "indicvoices": {
+     "wer": 59.67,
+     "nwer": 56.19
+    },
+    "indicvoices-phone": {
+     "wer": 65.98,
+     "nwer": 62.75
+    },
+    "podcast": {
+     "wer": 74.87,
+     "nwer": 72.13
+    },
+    "codeswitch": {
+     "wer": 70.68,
+     "nwer": 66.63
+    },
+    "mean": {
+     "wer": 60.51,
+     "nwer": 56.94
+    },
+    "neptel02": {
+     "wer": 81.62,
+     "nwer": 79.78
+    },
+    "pvspeech": {
+     "wer": 32.71,
+     "nwer": 28.99
+    }
+   }
+  },
+  "xlsr": {
+   "name": "Nepali ASR XLS-R",
+   "maker": "BlackfireAI",
+   "link": "https://huggingface.co/BlackfireAI/nepali-asr-xlsr-300m",
+   "parameters": "315M",
+   "test": {
+    "fleurs": {
+     "wer": 37.01,
+     "nwer": 32.71
+    },
+    "indicvoices": {
+     "wer": 56.28,
+     "nwer": 54.49
+    },
+    "indicvoices-phone": {
+     "wer": 66.21,
+     "nwer": 64.65
+    },
+    "podcast": {
+     "wer": 74.69,
+     "nwer": 72.41
+    },
+    "codeswitch": {
+     "wer": 71.4,
+     "nwer": 69.0
+    },
+    "mean": {
+     "wer": 61.12,
+     "nwer": 58.65
+    }
+   }
+  },
+  "seamless-m4t-v2": {
+   "name": "SeamlessM4T v2 large",
+   "maker": "Meta",
+   "link": "https://huggingface.co/facebook/seamless-m4t-v2-large",
+   "parameters": "2.31B",
+   "test": {
+    "fleurs": {
+     "wer": 24.53,
+     "nwer": 19.07
+    },
+    "indicvoices": {
+     "wer": 69.3,
+     "nwer": 66.82
+    },
+    "indicvoices-phone": {
+     "wer": 80.22,
+     "nwer": 77.91
+    },
+    "podcast": {
+     "wer": 89.23,
+     "nwer": 86.82
+    },
+    "codeswitch": {
+     "wer": 83.63,
+     "nwer": 76.59
+    },
+    "mean": {
+     "wer": 69.38,
+     "nwer": 65.44
+    }
+   }
+  },
+  "paudel-whisper-turbo": {
+   "name": "Nepali ASR Whisper turbo",
+   "maker": "sumanpaudel1997",
+   "link": "https://huggingface.co/sumanpaudel1997/nepali-asr-whisper-turbo",
+   "parameters": "809M",
+   "test": {
+    "fleurs": {
+     "wer": 39.42,
+     "nwer": 33.61
+    },
+    "indicvoices": {
+     "wer": 62.98,
+     "nwer": 60.4
+    },
+    "indicvoices-phone": {
+     "wer": 71.07,
+     "nwer": 68.99
+    },
+    "podcast": {
+     "wer": 111.36,
+     "nwer": 108.63
+    },
+    "codeswitch": {
+     "wer": 76.31,
+     "nwer": 72.52
+    },
+    "mean": {
+     "wer": 72.23,
+     "nwer": 68.83
+    },
+    "neptel02": {
+     "wer": 94.75,
+     "nwer": 94.69
+    },
+    "pvspeech": {
+     "wer": 24.2,
+     "nwer": 20.48
+    },
+    "freshread": {
+     "wer": 28.32,
+     "nwer": 18.85
+    }
+   }
+  },
+  "rani": {
+   "name": "Rani (Ampixa Labs)",
+   "maker": "Ampixa Labs",
+   "link": "https://github.com/Ampixa/rani-asr",
+   "parameters": "121M",
+   "test": {
+    "fleurs": {
+     "wer": 33.83,
+     "nwer": 26.84
+    },
+    "neptel02": {
+     "wer": 33.48,
+     "nwer": 31.23
+    },
+    "pvspeech": {
+     "wer": 18.35,
+     "nwer": 14.63
+    }
+   }
+  }
+ }
+}
