@@ -10,7 +10,7 @@
 - **Light.** One Python file, no graphics card, 28 times faster than real time on a desktop processor.
 
 [Model on Hugging Face](https://huggingface.co/fiste-ai/shravya) · [Website](https://fiste-ai.github.io/shravya/) ·
-[Full benchmark](BENCHMARK.md)
+[Full benchmark](BENCHMARK.md) · [Request a demo](https://fiste-ai.github.io/contact/)
 
 ## Benchmark
 
@@ -58,5 +58,11 @@ print(model.transcribe("call.wav", style="verbatim"))    # the way it was said
 ## Licence
 
 Code MIT. Weights CC BY-NC 4.0, by request on Hugging Face.
+
+## Using Shravya at work
+
+The weights are non-commercial. For a product or a paid service, a demo on your own recordings, or a pilot in a
+call centre or a newsroom, write to us: **[request a demo](https://fiste-ai.github.io/contact/)** ·
+<fistelabs@gmail.com>. Bugs and questions belong in the [issues](https://github.com/fiste-ai/shravya/issues).
 
 श्रव्य (shravya) means audible.
