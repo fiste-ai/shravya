@@ -1,5 +1,5 @@
 {
- "measured": "11 November 2026",
+ "measured": "13 November 2026",
  "unit": "percent",
  "metrics": {
   "wer": "word error rate",
@@ -94,6 +94,50 @@
     }
    }
   },
+  "rani-indicconformer": {
+   "name": "Rani-IndicConformer (Ampixa Labs)",
+   "maker": "Ampixa Labs",
+   "link": "https://github.com/Ampixa/rani-asr",
+   "parameters": "129M",
+   "test": {
+    "fleurs": {
+     "wer": 24.91,
+     "nwer": 19.47
+    },
+    "indicvoices": {
+     "wer": 12.25,
+     "nwer": 11.52
+    },
+    "indicvoices-phone": {
+     "wer": 15.08,
+     "nwer": 14.34
+    },
+    "podcast": {
+     "wer": 44.91,
+     "nwer": 39.08
+    },
+    "codeswitch": {
+     "wer": 40.41,
+     "nwer": 35.64
+    },
+    "mean": {
+     "wer": 27.51,
+     "nwer": 24.01
+    },
+    "neptel02": {
+     "wer": 41.22,
+     "nwer": 38.61
+    },
+    "pvspeech": {
+     "wer": 19.68,
+     "nwer": 17.29
+    },
+    "freshread": {
+     "wer": 17.9,
+     "nwer": 12.39
+    }
+   }
+  },
   "upstream": {
    "name": "IndicConformer Nepali",
    "maker": "AI4Bharat",
@@ -183,9 +227,9 @@
    }
   },
   "kriti-telephony": {
-   "name": "Kriti Telephony",
-   "maker": "Aarjan",
-   "link": "https://huggingface.co/Aarjan/kriti-telephony",
+   "name": "Kriti Telephony v1",
+   "maker": "Naamche Labs",
+   "link": "https://github.com/Naamche-Labs/kriti-telephony/tree/v1",
    "parameters": "129M",
    "test": {
     "fleurs": {
@@ -219,6 +263,50 @@
     "pvspeech": {
      "wer": 16.76,
      "nwer": 11.17
+    }
+   }
+  },
+  "rani": {
+   "name": "Rani (Ampixa Labs)",
+   "maker": "Ampixa Labs",
+   "link": "https://github.com/Ampixa/rani-asr",
+   "parameters": "121M",
+   "test": {
+    "fleurs": {
+     "wer": 33.84,
+     "nwer": 26.87
+    },
+    "indicvoices": {
+     "wer": 24.92,
+     "nwer": 22.82
+    },
+    "indicvoices-phone": {
+     "wer": 29.27,
+     "nwer": 27.37
+    },
+    "podcast": {
+     "wer": 32.47,
+     "nwer": 27.32
+    },
+    "codeswitch": {
+     "wer": 39.82,
+     "nwer": 34.25
+    },
+    "mean": {
+     "wer": 32.06,
+     "nwer": 27.73
+    },
+    "neptel02": {
+     "wer": 33.56,
+     "nwer": 31.31
+    },
+    "pvspeech": {
+     "wer": 18.09,
+     "nwer": 14.1
+    },
+    "freshread": {
+     "wer": 22.36,
+     "nwer": 16.62
     }
    }
   },
@@ -342,6 +430,50 @@
     }
    }
   },
+  "ampixa-offline": {
+   "name": "NepaliConformer offline (Ampixa Labs)",
+   "maker": "Ampixa Labs",
+   "link": "https://github.com/Ampixa/rani-asr",
+   "parameters": "121M",
+   "test": {
+    "fleurs": {
+     "wer": 42.53,
+     "nwer": 28.73
+    },
+    "indicvoices": {
+     "wer": 40.45,
+     "nwer": 32.23
+    },
+    "indicvoices-phone": {
+     "wer": 43.76,
+     "nwer": 35.98
+    },
+    "podcast": {
+     "wer": 20.39,
+     "nwer": 19.16
+    },
+    "codeswitch": {
+     "wer": 46.45,
+     "nwer": 36.83
+    },
+    "mean": {
+     "wer": 38.72,
+     "nwer": 30.59
+    },
+    "neptel02": {
+     "wer": 39.6,
+     "nwer": 36.12
+    },
+    "pvspeech": {
+     "wer": 20.48,
+     "nwer": 13.56
+    },
+    "freshread": {
+     "wer": 29.64,
+     "nwer": 23.32
+    }
+   }
+  },
   "ailab-whisper-turbo": {
    "name": "Whisper turbo code-mix (AI Lab)",
    "maker": "AI Lab",
@@ -383,6 +515,50 @@
     "freshread": {
      "wer": 30.37,
      "nwer": 22.27
+    }
+   }
+  },
+  "ampixa-streaming": {
+   "name": "NepaliConformer streaming (Ampixa Labs)",
+   "maker": "Ampixa Labs",
+   "link": "https://github.com/Ampixa/rani-asr",
+   "parameters": "121M",
+   "test": {
+    "fleurs": {
+     "wer": 54.7,
+     "nwer": 48.6
+    },
+    "indicvoices": {
+     "wer": 51.45,
+     "nwer": 46.16
+    },
+    "indicvoices-phone": {
+     "wer": 57.41,
+     "nwer": 53.37
+    },
+    "podcast": {
+     "wer": 38.6,
+     "nwer": 37.59
+    },
+    "codeswitch": {
+     "wer": 59.26,
+     "nwer": 54.36
+    },
+    "mean": {
+     "wer": 52.28,
+     "nwer": 48.02
+    },
+    "neptel02": {
+     "wer": 63.31,
+     "nwer": 61.7
+    },
+    "pvspeech": {
+     "wer": 38.83,
+     "nwer": 34.57
+    },
+    "freshread": {
+     "wer": 40.44,
+     "nwer": 34.56
     }
    }
   },
@@ -655,26 +831,6 @@
     "freshread": {
      "wer": 28.32,
      "nwer": 18.85
-    }
-   }
-  },
-  "rani": {
-   "name": "Rani (Ampixa Labs)",
-   "maker": "Ampixa Labs",
-   "link": "https://github.com/Ampixa/rani-asr",
-   "parameters": "121M",
-   "test": {
-    "fleurs": {
-     "wer": 33.83,
-     "nwer": 26.84
-    },
-    "neptel02": {
-     "wer": 33.48,
-     "nwer": 31.23
-    },
-    "pvspeech": {
-     "wer": 18.35,
-     "nwer": 14.63
     }
    }
   }
