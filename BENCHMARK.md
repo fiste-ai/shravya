@@ -82,6 +82,40 @@ difference lies above zero, includes zero or lies below zero.
 | IndicConformer code-mix (AI Lab) | +15.1 [+14.0, +16.5] | +11.0 [+9.9, +12.5] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
 | Ratna (Ampixa Labs) | +30.7 [+29.6, +31.9] | +31.1 [+30.0, +32.4] | FLEURS, IndicVoices, IndicVoices (phone), Podcast, Code-switch | none | none |
 
+## Shravya Live (preview)
+
+[Shravya Live](https://huggingface.co/fiste-ai/shravya#shravya-live-preview) is Shravya's model for live speech.
+It writes text every 640 or 320 ms while the sound comes in, and reads each phrase once more when the speaker
+pauses. The same test sets, each cell **WER / nWER**.
+
+| Shravya Live | Mean | FLEURS | IndicVoices | IndicVoices (phone) | Podcast | Code-switch |
+|---|---|---|---|---|---|---|
+| Live text, every 640 ms | 28.4 / 25.8 | 31.4 / 26.7 | 17.1 / 16.2 | 21.4 / 20.6 | 35.3 / 34.0 | 36.8 / 31.3 |
+| Live text, every 320 ms | 31.8 / 29.2 | 35.7 / 31.2 | 19.6 / 18.9 | 25.7 / 25.0 | 38.1 / 36.8 | 39.5 / 34.4 |
+| Final text of a phrase | 23.5 / 20.8 | 24.5 / 19.6 | 13.6 / 12.8 | 16.1 / 15.3 | 30.9 / 29.6 | 32.5 / 26.7 |
+
+| Shravya Live | NepTel 0.2 (calls) | PVSpeech (read) | New read speech |
+|---|---|---|---|
+| Live text, every 640 ms | 44.5 / 41.4 | 19.4 / 17.0 | 25.4 / 18.2 |
+| Live text, every 320 ms | 47.0 / 44.6 | 19.7 / 16.2 | 29.6 / 23.4 |
+| Final text of a phrase | 37.7 / 34.1 | 14.1 / 11.2 | 21.1 / 12.7 |
+
+- **Live text** is what the stream had written when the clip ended, with no second reading.
+- **Final text** is the text after the clip was read once more as a whole. `finish()` does that at the end of the
+  sound, and `cut()` does it for a phrase when the speaker pauses.
+- Each clip was fed to the published runtime in blocks of the step length, from the published files, on a
+  processor. The spelling style is chosen as for Shravya.
+- **Speed.** On one thread of an Intel Core i7-10700K (40 clips): 0.120 of real time at
+  640 ms, 74 ms of work for each step; 0.175 of real time at 320 ms,
+  55 ms for each step. The second reading of a phrase of 9 seconds takes
+  0.7 seconds.
+- **Checks.** On the 5,264 test clips the published files write exactly the text of the training
+  toolkit 5,253 times at 640 ms and 5,256 times at 320 ms. On 24
+  clips the text was the same whether the sound came as one block, in blocks of 100 ms or in blocks of random
+  length. A recording of 20 minutes went through as one stream at a steady speed, and its
+  memory levelled off at 1.7 GB.
+- It is a preview: it has been measured on recordings, not yet on live calls.
+
 ## Method
 
 - **Decoding.** Each system was run by us from its public weights, with its own default greedy decoding and no
@@ -120,3 +154,4 @@ difference lies above zero, includes zero or lies below zero.
 ## History
 
 - 11 November 2026: first version with 16 systems, published with Shravya 0.1.
+- 13 November 2026: Shravya Live 0.1 (preview) added, with a table of its own.

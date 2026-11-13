@@ -678,5 +678,125 @@
     }
    }
   }
+ },
+ "shravya_live": {
+  "name": "Shravya Live 0.1 (preview)",
+  "released": "2026-11-13",
+  "test": {
+   "Live text, every 640 ms": {
+    "fleurs": {
+     "wer": 31.42,
+     "nwer": 26.68
+    },
+    "indicvoices": {
+     "wer": 17.1,
+     "nwer": 16.25
+    },
+    "indicvoices-phone": {
+     "wer": 21.39,
+     "nwer": 20.6
+    },
+    "podcast": {
+     "wer": 35.27,
+     "nwer": 33.96
+    },
+    "codeswitch": {
+     "wer": 36.8,
+     "nwer": 31.32
+    },
+    "mean": {
+     "wer": 28.4,
+     "nwer": 25.76
+    },
+    "neptel02": {
+     "wer": 44.47,
+     "nwer": 41.36
+    },
+    "pvspeech": {
+     "wer": 19.41,
+     "nwer": 17.02
+    },
+    "freshread": {
+     "wer": 25.41,
+     "nwer": 18.21
+    }
+   },
+   "Live text, every 320 ms": {
+    "fleurs": {
+     "wer": 35.72,
+     "nwer": 31.23
+    },
+    "indicvoices": {
+     "wer": 19.64,
+     "nwer": 18.85
+    },
+    "indicvoices-phone": {
+     "wer": 25.73,
+     "nwer": 24.98
+    },
+    "podcast": {
+     "wer": 38.15,
+     "nwer": 36.79
+    },
+    "codeswitch": {
+     "wer": 39.5,
+     "nwer": 34.38
+    },
+    "mean": {
+     "wer": 31.75,
+     "nwer": 29.25
+    },
+    "neptel02": {
+     "wer": 47.04,
+     "nwer": 44.61
+    },
+    "pvspeech": {
+     "wer": 19.68,
+     "nwer": 16.22
+    },
+    "freshread": {
+     "wer": 29.6,
+     "nwer": 23.41
+    }
+   },
+   "Final text of a phrase": {
+    "fleurs": {
+     "wer": 24.54,
+     "nwer": 19.6
+    },
+    "indicvoices": {
+     "wer": 13.59,
+     "nwer": 12.77
+    },
+    "indicvoices-phone": {
+     "wer": 16.1,
+     "nwer": 15.28
+    },
+    "podcast": {
+     "wer": 30.94,
+     "nwer": 29.64
+    },
+    "codeswitch": {
+     "wer": 32.47,
+     "nwer": 26.7
+    },
+    "mean": {
+     "wer": 23.53,
+     "nwer": 20.8
+    },
+    "neptel02": {
+     "wer": 37.71,
+     "nwer": 34.06
+    },
+    "pvspeech": {
+     "wer": 14.1,
+     "nwer": 11.17
+    },
+    "freshread": {
+     "wer": 21.08,
+     "nwer": 12.66
+    }
+   }
+  }
  }
 }

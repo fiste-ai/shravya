@@ -8,6 +8,7 @@
   systems we measured.
 - **Made for real speech.** Conversations, phone calls, podcasts and Nepali with English mixed in.
 - **Light.** One Python file, no graphics card, 28 times faster than real time on a desktop processor.
+- **Live.** [Shravya Live](#shravya-live-preview) writes the text while someone is still speaking. Preview.
 
 [Model on Hugging Face](https://huggingface.co/fiste-ai/shravya) · [Website](https://fiste-ai.github.io/shravya/) ·
 [Full benchmark](BENCHMARK.md) · [Request a demo](https://fiste-ai.github.io/contact/)
@@ -54,6 +55,35 @@ print(model.transcribe("call.wav", style="verbatim"))    # the way it was said
 ```
 
 [`shravya.py`](shravya.py) is the whole runtime: one file that needs `onnxruntime` and `numpy`.
+
+## Shravya Live (preview)
+
+Shravya Live writes the text while someone is still speaking. When the speaker pauses it reads the phrase once
+more as a whole, and that is the text to keep. It is a second model, in the folder `live/` of the same download.
+
+```python
+model = shravya.load("shravya-model/live")
+stream = model.stream()                    # text every 640 ms; chunk_ms=320 answers sooner
+for block in microphone:                   # 16 kHz mono float samples, blocks of any length
+    print(stream.feed(block))              # the phrase so far
+    if stream.pause > 0.8:                 # the speaker has stopped for a moment
+        print(stream.cut())                # the phrase read once more: the text to keep
+print(stream.finish())                     # the same for the last phrase
+```
+
+To try it on a recording: `python shravya-model/shravya.py --model shravya-model/live --stream clip.wav`
+
+Word error rate in percent on the five test sets above, lower is better.
+
+| Shravya Live | Mean | FLEURS | IndicVoices | IndicVoices (phone) | Podcast | Code-switch |
+|---|---|---|---|---|---|---|
+| Live text, every 640 ms | 28.4 | 31.4 | 17.1 | 21.4 | 35.3 | 36.8 |
+| Live text, every 320 ms | 31.8 | 35.7 | 19.6 | 25.7 | 38.1 | 39.5 |
+| Final text of a phrase | 23.5 | 24.5 | 13.6 | 16.1 | 30.9 | 32.5 |
+
+On one thread of a desktop processor it runs 8 times faster than real time
+(5.7 times at 320 ms). It is a preview: measured on recordings fed to it in small blocks, not yet
+on live calls. More in [BENCHMARK.md](BENCHMARK.md#shravya-live-preview).
 
 ## Licence
 
